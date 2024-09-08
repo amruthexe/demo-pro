@@ -23,68 +23,10 @@ header {
   text-align: center;
   margin-bottom: 40px;
   padding: 20px;
-  background: rgba(0, 0, 0, 0.9); /* Adjust for a more subtle background */
+  background-color: #000; /* Pure black background */
   border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.7); /* Shadow is black */
   animation: slideIn 1s ease-out;
-}
-
-@keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translateY(-50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-header h1 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-}
-
-header h2 {
-  font-size: 1.6em;
-  margin-bottom: 20px;
-  color: #ff007f;
-  animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-  0% {
-    color: #ff007f;
-  }
-  50% {
-    color: #00ff00;
-  }
-  100% {
-    color: #ff007f;
-  }
-}
-
-.contact p {
-  margin: 5px 0;
-}
-
-.download-btn {
-  display: inline-block;
-  padding: 12px 25px;
-  margin-top: 20px;
-  background-color: #00ff00;
-  color: #000;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 5px;
-  transition: all 0.3s ease;
-}
-
-.download-btn:hover {
-  background-color: #00cc00;
-  transform: scale(1.05);
-  box-shadow: 0px 0px 15px 5px rgba(0, 255, 0, 0.5);
 }
 
 .project-container {
@@ -120,9 +62,9 @@ header h2 {
 section {
   margin-bottom: 30px;
   padding: 20px;
-  background: rgba(0, 0, 0, 0.9);
+  background-color: #000; /* Pure black background */
   border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.7); /* Pure black shadow */
   transition: all 0.3s ease;
 }
 
@@ -137,11 +79,6 @@ section h2 {
   text-decoration: underline;
   color: #ff007f;
   transition: all 0.3s ease-in-out;
-}
-
-section h2:hover {
-  color: #00ff00;
-  text-shadow: 0 0 8px #00ff00;
 }
 
 ul {
@@ -164,21 +101,13 @@ ul li:before {
   transition: color 0.3s ease;
 }
 
-ul li:hover:before {
-  color: #00cc00;
-}
-
-.highlight {
-  color: #ff007f;
-}
-
 footer {
   text-align: center;
   margin-top: 40px;
   padding: 20px;
-  background: rgba(0, 0, 0, 0.9);
+  background-color: #000; /* Pure black background */
   border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.7); /* Shadow with pure black */
   font-size: 1.2em;
 }
 
