@@ -7,22 +7,23 @@
 
 body {
   font-family: 'Share Tech Mono', monospace;
-  background: linear-gradient(135deg, #000, #1a1a1a);
+  background-color: #000; /* Pure black background */
   color: #00ff00;
   padding: 20px;
   scroll-behavior: smooth; /* Smooth scrolling across the page */
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
+  padding: 10px;
 }
 
 header {
   text-align: center;
   margin-bottom: 40px;
   padding: 20px;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.9); /* Adjust for a more subtle background */
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
   animation: slideIn 1s ease-out;
@@ -40,13 +41,13 @@ header {
 }
 
 header h1 {
-  font-size: 3em;
+  font-size: 2.5em;
   margin-bottom: 10px;
   text-transform: uppercase;
 }
 
 header h2 {
-  font-size: 1.8em;
+  font-size: 1.6em;
   margin-bottom: 20px;
   color: #ff007f;
   animation: pulse 2s infinite;
@@ -88,17 +89,19 @@ header h2 {
 
 .project-container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
 .project-description {
-  flex: 1;
+  margin-bottom: 10px;
 }
 
 .project-buttons {
   display: flex;
   gap: 10px;
+  justify-content: center;
 }
 
 .project-btn-left, .project-btn-right {
@@ -115,9 +118,9 @@ header h2 {
 }
 
 section {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   padding: 20px;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.9);
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
   transition: all 0.3s ease;
@@ -129,7 +132,7 @@ section:hover {
 }
 
 section h2 {
-  font-size: 2em;
+  font-size: 1.8em;
   margin-bottom: 20px;
   text-decoration: underline;
   color: #ff007f;
@@ -146,8 +149,10 @@ ul {
 }
 
 ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between icon and text */
   margin-bottom: 15px;
-  position: relative;
   padding-left: 10px;
   font-size: 1.2em;
 }
@@ -160,18 +165,18 @@ ul li:before {
 }
 
 ul li:hover:before {
-  color: #00cc00; /* Slightly brighter green on hover */
+  color: #00cc00;
 }
 
 .highlight {
-  color: #ff007f; /* Dark pink for special text */
+  color: #ff007f;
 }
 
 footer {
   text-align: center;
   margin-top: 40px;
   padding: 20px;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.9);
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
   font-size: 1.2em;
@@ -188,10 +193,10 @@ html {
   scroll-behavior: smooth;
 }
 
-/* More responsiveness */
+/* Mobile Responsiveness */
 @media (max-width: 768px) {
   header h1 {
-    font-size: 2.2em;
+    font-size: 2em;
   }
 
   header h2 {
@@ -199,22 +204,22 @@ html {
   }
 
   .download-btn {
-    padding: 8px 16px;
+    padding: 10px 18px;
   }
 
   section h2 {
-    font-size: 1.6em;
+    font-size: 1.4em;
   }
 
   section ul li {
-    font-size: 1.1em;
+    font-size: 1em;
   }
-}
 
-/* Add the following CSS rules for better alignment of icons and text if needed */
+  .project-container {
+    flex-direction: column;
+  }
 
-ul li {
-  display: flex;
-  align-items: center;
-  gap: 10px; /* Space between icon and text */
+  .project-buttons {
+    flex-direction: column;
+  }
 }
