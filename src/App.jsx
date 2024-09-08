@@ -1,4 +1,6 @@
 import React from "react";
+import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaJs, FaDatabase, FaPython, FaJava, FaGit } from "react-icons/fa";
+import { SiMysql, SiFirebase, SiExpress } from "react-icons/si"; // For specific technologies
 import './App.css'; // Import the CSS file
 
 function App() {
@@ -34,46 +36,45 @@ function App() {
       <section>
         <h2>Technical Skills</h2>
         <ul>
-          <li><span className="highlight">Front-End:</span> HTML, CSS, JavaScript, React.js</li>
-          <li><span className="highlight">Back-End:</span> Node.js, Express.js</li>
-          <li><span className="highlight">Databases:</span> MySQL, Firebase (NoSQL)</li>
-          <li><span className="highlight">Languages:</span> JavaScript, Python, Java</li>
-          <li><span className="highlight">Tools:</span> Git, MERN Stack</li>
+          <li>
+            <span className="highlight">Front-End:</span> 
+            <FaHtml5 /> HTML, <FaCss3Alt /> CSS, <FaJs /> JavaScript, <FaReact /> React.js
+          </li>
+          <li>
+            <span className="highlight">Back-End:</span> 
+            <FaNodeJs /> Node.js, <SiExpress /> Express.js
+          </li>
+          <li>
+            <span className="highlight">Databases:</span> 
+            <SiMysql /> MySQL, <SiFirebase /> Firebase (NoSQL)
+          </li>
+          <li>
+            <span className="highlight">Languages:</span> 
+            <FaJs /> JavaScript, <FaPython /> Python, <FaJava /> Java
+          </li>
+          <li>
+            <span className="highlight">Tools:</span> 
+            <FaGit /> Git, MERN Stack
+          </li>
         </ul>
       </section>
 
-
       <section>
-  <h2>Projects</h2>
-  <ul>
-    <li>
-      <div className="project-container">
-        <div className="project-description">
-          <strong>Franchise Hub Website</strong>: A website built using React.js and Tailwind CSS that helps users find and explore different franchise opportunities.
-        </div>
-        <div className="project-buttons">
-          <a href="https://franchise-hub.vercel.app/" target="_blank" rel="noopener noreferrer" className="project-btn-left">View Site</a>
-          <a href="https://github.com/amruthexe/Franchise-Hub" target="_blank" rel="noopener noreferrer" className="project-btn-right">GitHub</a>
-        </div>
-      </div>
-    </li>
-    <li>
-      <div className="project-container">
-        <div className="project-description">
-          <strong>College Website with React.js</strong>: Developed a responsive and dynamic interface with React.js, styled using CSS and JSX for an intuitive user experience across multiple devices.
-        </div>
-        <div className="project-buttons">
-          <a href="https://college-site-link" target="_blank" rel="noopener noreferrer" className="project-btn-left">View Site</a>
-          <a href="https://github.com/amruthexe/College-Site" target="_blank" rel="noopener noreferrer" className="project-btn-right">GitHub</a>
-        </div>
-      </div>
-    </li>
-  </ul>
-</section>
-
-
-
-
+        <h2>Projects</h2>
+        <ul>
+          <li>
+            <div className="project-container">
+              <div className="project-description">
+                <strong>Franchise Hub Website</strong>: A website built using React.js and Tailwind CSS that helps users find and explore different franchise opportunities.
+              </div>
+              <div className="project-buttons">
+                <a href="https://franchise-hub.vercel.app/" target="_blank" rel="noopener noreferrer" className="project-btn-left">View Site</a>
+                <a href="https://github.com/amruthexe/Franchise-Hub" target="_blank" rel="noopener noreferrer" className="project-btn-right">GitHub</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
 
       <section>
         <h2>Achievements & Certificates</h2>
